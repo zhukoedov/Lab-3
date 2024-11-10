@@ -44,23 +44,18 @@ def get_n_gen():
 
 
 if __name__ == "__main__":
-    
+
     root = tk.Tk()
     root.geometry('600x560')
     root.title('MEGACHIFFRATOR')
-    
 
     background_image = tk.PhotoImage(file='boss.png')
     lbl_bg = tk.Label(root, image=background_image)
     lbl_bg.place(x=0, y=0, relwidth=1, relheight=1)
 
-
-
-    
     lbl_welcome = ttk.Label(text='Write a source for key')
     lbl_welcome.place(y=300)
     lbl_welcome.pack(anchor='center', pady=10)
-    
 
     global entry
     entry = ttk.Entry()
