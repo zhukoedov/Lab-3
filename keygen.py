@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 import random
-
+from pygame import mixer
 
 A = 65
 Z = 90
@@ -44,6 +44,10 @@ def get_n_gen():
 
 
 if __name__ == "__main__":
+
+    mixer.init()
+    music = mixer.Sound("megalovania.mp3")
+    music.play()
 
     root = tk.Tk()
     root.geometry('600x560')
